@@ -1,17 +1,18 @@
-# Fullstack Blog Project
+# 🚀 Fullstack Blog Project
 
-This project is a fullstack blog application built with a modern and powerful technology stack. It is organized as a monorepo using Turborepo, with separate frontend and backend applications.
+This project is a fullstack blog application built with a modern and powerful technology stack using TypeScript. It is organized as a monorepo using Turborepo, with separate frontend and backend applications.
 
-## Technology Stack
+## 🛠️ Technology Stack
 
-- **Frontend:** Next.js with ShadCN UI for a sleek and responsive user interface.
-- **Backend:** NestJS framework providing REST API and GraphQL endpoints.
-- **Database:** Prisma ORM managing SQLite for local development and PostgreSQL for production.
-- **Authentication:** Google OAuth for secure user authentication and authorization.
-- **Monorepo:** Managed with Turborepo for efficient builds and development.
-- **Cloud:** AWS for deployment and hosting.
+- 🧑‍💻 **Frontend:** [Next.js](https://nextjs.org/) with [ShadCN UI](https://ui.shadcn.com/) for a sleek and responsive user interface.
+- ⚙️ **Backend:** [NestJS](https://nestjs.com/) framework providing REST API and [GraphQL](https://graphql.org/) endpoints.
+- 📝 **Language:** [TypeScript](https://www.typescriptlang.org/) for both frontend and backend development.
+- 🗄️ **Database:** [Prisma](https://www.prisma.io/) ORM managing [SQLite](https://sqlite.org/) for local development and [PostgreSQL](https://www.postgresql.org/) for production.
+- 🔐 **Authentication:** [Google OAuth](https://developers.google.com/identity/protocols/oauth2) for secure user authentication and authorization.
+- 📦 **Monorepo:** Managed with [Turborepo](https://turborepo.com/) for efficient builds and development.
+- ☁️ **Cloud:** [AWS](https://aws.amazon.com/) for deployment and hosting.
 
-## Features
+## ✨ Features
 
 - User authentication and authorization via Google OAuth.
 - CRUD operations for blog posts and comments.
@@ -21,21 +22,21 @@ This project is a fullstack blog application built with a modern and powerful te
 - Supports SQLite for local development and PostgreSQL for production.
 - Efficient monorepo structure with Turborepo.
 
-## Getting Started
+## ⚙️ Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
 - Node.js (v16 or higher)
 - npm or yarn
 - Docker (optional, for PostgreSQL)
 - AWS account (for deployment)
 
-### Installation
+### 📦 Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:chaad98/blog.git
    cd blog
    ```
 
@@ -65,7 +66,7 @@ This project is a fullstack blog application built with a modern and powerful te
    npm run db:seed --workspace=apps/backend
    ```
 
-### Running the Development Server
+### 🧪 Running the Development Server
 
 - Start the backend server:
 
@@ -79,22 +80,14 @@ This project is a fullstack blog application built with a modern and powerful te
   npm run dev --workspace=apps/frontend
   ```
 
-### Deployment
+### ☁️ Deployment
 
 The project is configured to deploy on AWS. Refer to the deployment documentation for detailed instructions.
 
-## Project Structure
+## 📁 Project Structure
 
 - `apps/frontend`: Next.js frontend application
 - `apps/backend`: NestJS backend application with Prisma ORM
 - `apps/backend/prisma`: Prisma schema and migrations
 - `apps/backend/src`: Backend source code
 - `apps/frontend/src`: Frontend source code
-
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests.
-
-## License
-
-This project is licensed under the MIT License.

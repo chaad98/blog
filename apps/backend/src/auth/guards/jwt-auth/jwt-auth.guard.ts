@@ -4,7 +4,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { Observable } from 'rxjs';
 
 @Injectable() // Marks the class as injectable so it can be used by NestJS dependency injection
-export class JwtAuthGuard extends AuthGuard('owlabs') {
+export class JwtAuthGuard extends AuthGuard('jwt') {
   // Extends Passport's AuthGuard configured with 'jwt' strategy
   getRequest(context: ExecutionContext) {
     // Convert standard ExecutionContext to GraphQL context

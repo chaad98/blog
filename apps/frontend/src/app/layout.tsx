@@ -3,6 +3,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import DesktopNavbar from "@/components/desktopNavbar";
+import Navbar from "@/components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DesktopNavbar>
+          {/**
+           * 1) This is another way around to type as {props.children}
+           * 2) Best practice is to write like this
+           * 3) Reason - DesktopNavbar treat as a CSR and Navbar treat as SSR
+           */}
+          <Navbar />
+        </DesktopNavbar>
         {children}
       </body>
     </html>

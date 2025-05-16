@@ -11,7 +11,7 @@ const Hero = () => {
             yours
           </p>
           <h2 className="my-5 text-5xl font-bold leading-tight">
-            Welcome to Chad Dev Blog
+            {`Welcome to OwlBlog`}
           </h2>
           <p className="capitalize leading-normal text-xl">
             Join a community that thrives on learning, creating and growing

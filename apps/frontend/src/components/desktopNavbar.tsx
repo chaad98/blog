@@ -7,7 +7,7 @@ type Props = PropsWithChildren;
 const DesktopNavbar = (props: Props) => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
 
-  const handleScroll = () => {
+  const handleScroll = (): void => {
     setScrollPosition(window.scrollY);
   };
 
@@ -22,9 +22,12 @@ const DesktopNavbar = (props: Props) => {
   const isScrollDown: boolean = scrollPosition > 10;
   return (
     <nav
-      className={cn("fixed transition w-full z-50 text-white top-0 block", {
-        "bg-white text-gray-700 shadow:md": isScrollDown,
-      })}
+      className={cn(
+        "hidden fixed transition w-full z-50 text-white top-0 md:block",
+        {
+          "bg-white text-gray-700 shadow:md": isScrollDown,
+        }
+      )}
     >
       <div className="flex items-center px-4 py-4">
         {/*access the children which is comes from navbar component and render inside div tag here*/}

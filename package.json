@@ -19,6 +19,7 @@
   "type": "commonjs",
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
     "release-please": "^17.0.0",
     "turbo": "^2.5.2"
   }

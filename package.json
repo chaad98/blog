@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "lint": "turbo run lint",
-    "release": "dotenv -e .env -- release-please release-pr --repo-url=https://github.com/chaad98/blog.git --token=$GITHUB_TOKEN --default-branch=main"
+    "lint": "turbo run lint"
   },
   "packageManager": "npm@11.3.0",
   "workspaces": [
@@ -18,9 +17,6 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "dotenv-cli": "^8.0.0",
-    "release-please": "^17.0.0",
     "turbo": "^2.5.2"
   }
 }

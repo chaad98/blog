@@ -11,9 +11,12 @@ type Props = PropsWithChildren<{
 
 const SideBar = (props: Props) => {
   const [show, setShow] = useState<boolean>(false);
-  const ref = useRef(null!);
 
-  useOnClickOutside(ref, () => setShow(false));
+  // useRef<HTMLDivElement>(null!) tells TypeScript that
+  // myRef.current will eventually hold a reference to a div element (even though it's null at first).
+  const myRef = useRef<HTMLDivElement>(null!);
+
+  useOnClickOutside(myRef, () => setShow(false));
   return (
     <>
       <button
@@ -23,7 +26,7 @@ const SideBar = (props: Props) => {
         {props.triggerIcon}
       </button>
       <div
-        ref={ref}
+        ref={myRef}
         className={cn(
           "w-60 absolute top-0 z-10 transition-all duration-300 bg-white rounded-r-md min-h-screen",
           { "-left-full": !show, "left-0": show }
